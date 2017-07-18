@@ -1,0 +1,10 @@
+cxx_library(
+  name = 'linux',
+  header_namespace = 'linux',
+  exported_headers = subdir_glob([
+    ('', '**/*.hpp'),
+  ]),
+  visibility = [
+    'PUBLIC',
+  ],
+)

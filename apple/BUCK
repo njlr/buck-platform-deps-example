@@ -1,0 +1,10 @@
+cxx_library(
+  name = 'apple',
+  header_namespace = 'apple',
+  exported_headers = subdir_glob([
+    ('', '**/*.hpp'),
+  ]),
+  visibility = [
+    'PUBLIC',
+  ],
+)
